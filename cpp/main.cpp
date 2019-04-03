@@ -5,8 +5,8 @@
 
 #include "sort.h"
 #include "linked_list.h"
-#include "d_linked_list.h"
-#include "u_btree.h"
+#include "dbl_linked_list.h"
+#include "unbal_btree.h"
 
 
 int main()
@@ -21,6 +21,12 @@ int main()
     // tmg_test::test_u_btree();
     // tmg_test::test_d_linked_list();
 
+    // FIXME: adjust those files and separate queue and stack
+    // #include "linked_list.h"
+    // #include "dbl_linked_list.h"
+    // #include "unbal_btree.h"
+
+    
     std::cout << "If you see no errors, it means that all sort tests passed" << std::endl;
     return 0;
 }
