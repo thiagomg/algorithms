@@ -1,11 +1,15 @@
 #pragma once
 
+#include <vector>
+
 #include <limits>
 #include <algorithm>
 
 #include "prettyprint.hpp"
 
 #define assert_equal(x, y) _assert_equal(__FILE__, __LINE__, x, y)
+
+namespace tmg_test {
 
 template<typename T>
 void _print_error(const std::string &s, int line, const T& v, const T& expected) {
@@ -36,4 +40,6 @@ void _assert_equal(const std::string &s, int line, size_t v, size_t expected) {
     if(!ret) {
         _print_error(s, line, v, expected);
     }    
+}
+
 }
