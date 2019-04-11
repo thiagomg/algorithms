@@ -136,6 +136,8 @@ size_t binary_search(std::vector<T> &v, int value) {
     return std::numeric_limits<size_t>::max();
 }
 
+#include "test_helper.h"
+
 namespace tmg_test {
 
     void test_sort() {
