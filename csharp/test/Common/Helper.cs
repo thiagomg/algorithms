@@ -1,5 +1,5 @@
+using Algorithms.Trees.Model;
 using System;
-using System.Collections;
 using System.Linq;
 
 namespace Algorithms.Test.Common
@@ -18,6 +18,29 @@ namespace Algorithms.Test.Common
                 .Repeat(0, Max)
                 .Select(i => randNum.Next(Min, Max))
                 .ToArray();
+        }
+
+        public static Node GenerateTree()
+        {
+            return new Node
+            {
+                Name = "A",
+                Left = new Node
+                {
+                    Name = "B",
+                    Left = new Node { Name = "C" },
+                    Right = new Node { Name = "D" }
+                },
+                Right = new Node
+                {
+                    Name = "E",
+                    Right = new Node
+                    {
+                        Name = "F",
+                        Left = new Node { Name = "G" }
+                    }
+                }
+            };
         }
     }
 }

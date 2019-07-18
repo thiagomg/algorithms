@@ -21,6 +21,12 @@ namespace Algorithms.Test.Common
                 previous = item;
             }
         }
-
+        public static void SequenceEqual<T>(IEnumerable<T> expected, IEnumerable<T> actual)
+        {
+            if (!expected.SequenceEqual(actual))
+            {
+                throw new Exception("Sequences are not equal");
+            }
+        }
     }
 }

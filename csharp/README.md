@@ -13,6 +13,10 @@ We've decided to not use any packages and stick to C# features that are baked in
 * Bubble sort
 * Insertion sort
 
+### Trees
+
+* Depth First, Left to Right Traversing.
+
 ## CONTRIBUTORS
 
   * [Marcos Moroni Braz](https://github.com/mmoroni).
