@@ -4,9 +4,9 @@ using Algorithms.Test.Common;
 
 namespace Algorithms.Test.Sorting
 {
-    internal class InsertionSortTests
+    class InsertionSortTests : ITestRun
     {
-        public static void Run()
+        public void Run()
         {
             Console.Write("Testing InsertionSort... ");
             var unsorted = Helper.GenerateUnsortedCollection();

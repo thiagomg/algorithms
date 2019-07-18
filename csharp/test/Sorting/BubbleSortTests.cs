@@ -4,9 +4,9 @@ using Algorithms.Test.Common;
 
 namespace Algorithms.Test.Sorting
 {
-    public static class BubbleSortTests
+    class BubbleSortTests : ITestRun
     {
-        public static void Run()
+        public void Run()
         {
             Console.Write("Testing BubbleSort... ");
             var unsorted = Helper.GenerateUnsortedCollection();

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Algorithms.Test.Common
@@ -8,7 +9,7 @@ namespace Algorithms.Test.Common
         /// <summary>
         /// Assert a collection is sorted
         /// </summary>
-        public static void IsSorted<T>(System.Collections.Generic.IEnumerable<T> sorted) where T : IComparable<T>
+        public static void IsSorted<T>(IEnumerable<T> sorted) where T : IComparable<T>
         {
             var previous = sorted.First();
             foreach (var item in sorted.Skip(1))
